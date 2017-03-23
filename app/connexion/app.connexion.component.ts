@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { DataService} from '../services/app.service.data';
+//import {Sha1Service} from '../services/app.service.crypto';
 @Component({
   moduleId: module.id,
   selector: 'my-connexion',
@@ -24,6 +25,7 @@ export class ConnexionComponent {
             this.dataService.connexion(this.login,this.mdp)
                                   .subscribe( 
                                       (data)=>{this.visiteur = data;
+                                        this.dataService.visiteur = data;       // ajouté pour récupérer le visiteur dans la gestion des rapports
                                          this.router.navigate(['accueil']);}
                                       ,(error)=>{this.estCache = false;
                                                this.lblMessage = "erreur";}
