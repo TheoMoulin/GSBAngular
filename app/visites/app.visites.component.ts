@@ -31,7 +31,9 @@ export class VisitesComponent {
   messageMAJ: string = "";
   messageEnregistrement: string = "";
   typeMessage: string = "";
+
   constructor(private dataService: DataService) {}
+
   chargerMedecins() {
     this.dataService.chargerMedecins(this.nomMedecin).subscribe(
       data => {

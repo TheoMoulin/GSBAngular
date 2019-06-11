@@ -22,7 +22,8 @@ var appRoutes = [
     { path: '', component: app_connexion_component_1.ConnexionComponent },
     { path: 'medecins', component: app_medecins_component_1.MedecinsComponent },
     { path: 'visites', component: app_visites_component_1.VisitesComponent },
-    { path: 'accueil', component: app_navbar_component_1.NavbarComponent }
+    { path: 'accueil', component: app_navbar_component_1.NavbarComponent },
+    { path: 'mentions', component: app_navbar_component_1.NavbarComponent }
 ];
 var AppModule = /** @class */ (function () {
     function AppModule() {

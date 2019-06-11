@@ -16,7 +16,9 @@ const appRoutes: Routes = [
   { path: '', component: ConnexionComponent },
   { path: 'medecins', component: MedecinsComponent },
   { path: 'visites', component: VisitesComponent },
-  { path: 'accueil',  component: NavbarComponent  }
+  { path: 'accueil',  component: NavbarComponent  },
+  { path: 'mentions',  component: NavbarComponent  }
+
 ];
 
 
